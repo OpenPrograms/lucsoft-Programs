@@ -14,4 +14,9 @@
     
 (Now)
 
+    oppm register OpenPrograms/lucsoft-Programs
+    oppm install wrun
+
+(Alternative)
+
     wget https://raw.githubusercontent.com/OpenPrograms/lucsoft-Programs/master/wrun/src/wrun.lua
