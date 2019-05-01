@@ -5,7 +5,7 @@ if args[1] == "help" or "-h" then
   print("Usage")
   print("wrun URL | runs normal")
   print("wrun URL -q | runs quiet and no clear")
-  print("wrun [help | -q] | opens help")
+  print("wrun [help | -h] | opens help")
 else
   if args[2] ~= "-q" then
     print("Loading " .. args[1] .. "")
