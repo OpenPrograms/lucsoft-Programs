@@ -1,11 +1,7 @@
 local args = {...}
 local inet = require("internet")
 if args[1] == "help" or args[1] == "-h" or args[1] == nil then
-  print("wRun 1.0 Run from Web - Written by lucsoft")
-  print("Usage")
-  print("wrun URL | runs normal")
-  print("wrun URL -q | runs quiet and no clear")
-  print("wrun [help | -h] | opens help")
+  print("wRun 1.0 Run from Web - Written by lucsoft\nUsage\nwrun URL | runs normal\nwrun URL -q | runs quiet and no clear\nwrun [help | -h] | opens help")
 else
   if args[2] ~= "-q" then
     print("Loading " .. args[1] .. "")
@@ -18,6 +14,6 @@ else
   if args[2] ~= "-q" then
     os.execute("clear")
   end
-  f = load(code)
-  f()
+  f = load(code)()
+  return f
 end
